@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kebdaky - Authentic Egyptian Cuisine</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/Style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fas fa-utensils logo-icon me-2"></i>
+          <span class="brand-text" data-en="Kebdaky" data-ar="كبداكي"
+            >Kebdaky</span
+          >
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" data-en="Home" data-ar="الرئيسية"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu" data-en="Menu" data-ar="القائمة"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#testimonials"
+                data-en="Reviews"
+                data-ar="التقييمات"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                data-en="Contact"
+                data-ar="اتصل بنا"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="language-switcher">
+            <button class="btn btn-outline-primary btn-sm" id="langToggle">
+              <i class="fas fa-globe me-1"></i>
+              <span id="langText">العربية</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="hero-slide"
+              style="
+                background-image: url('https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1200');
+              "
+            >
+              <div class="hero-overlay"></div>
+              <div class="container">
+                <div class="hero-content">
+                  <h1
+                    class="hero-title animate-slide-up"
+                    data-en="Authentic Egyptian Flavors"
+                    data-ar="نكهات مصرية أصيلة"
+                  >
+                    Authentic Egyptian Flavors
+                  </h1>
+                  <p
+                    class="hero-subtitle animate-slide-up-delay"
+                    data-en="Experience the rich taste of traditional Egyptian cuisine"
+                    data-ar="اختبر الطعم الغني للمأكولات المصرية التقليدية"
+                  >
+                    Experience the rich taste of traditional Egyptian cuisine
+                  </p>
+                  <button
+                    class="btn btn-primary btn-lg animate-fade-in"
+                    data-en="Explore Menu"
+                    data-ar="استكشف القائمة"
+                  >
+                    Explore Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="hero-slide"
+              style="
+                background-image: url('https://images.pexels.com/photos/5836830/pexels-photo-5836830.jpeg?auto=compress&cs=tinysrgb&w=1200');
+              "
+            >
+              <div class="hero-overlay"></div>
+              <div class="container">
+                <div class="hero-content">
+                  <h1
+                    class="hero-title animate-slide-up"
+                    data-en="Fresh Seafood Delights"
+                    data-ar="مأكولات بحرية طازجة"
+                  >
+                    Fresh Seafood Delights
+                  </h1>
+                  <p
+                    class="hero-subtitle animate-slide-up-delay"
+                    data-en="Savor the finest catch from the Mediterranean"
+                    data-ar="استمتع بأفضل المأكولات البحرية من البحر المتوسط"
+                  >
+                    Savor the finest catch from the Mediterranean
+                  </p>
+                  <button
+                    class="btn btn-primary btn-lg animate-fade-in"
+                    data-en="Order Now"
+                    data-ar="اطلب الآن"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="hero-slide"
+              style="
+                background-image: url('https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1200');
+              "
+            >
+              <div class="hero-overlay"></div>
+              <div class="container">
+                <div class="hero-content">
+                  <h1
+                    class="hero-title animate-slide-up"
+                    data-en="Grilled to Perfection"
+                    data-ar="مشوي بإتقان"
+                  >
+                    Grilled to Perfection
+                  </h1>
+                  <p
+                    class="hero-subtitle animate-slide-up-delay"
+                    data-en="Tender meats grilled with authentic Egyptian spices"
+                    data-ar="لحوم طرية مشوية بالتوابل المصرية الأصيلة"
+                  >
+                    Tender meats grilled with authentic Egyptian spices
+                  </p>
+                  <button
+                    class="btn btn-primary btn-lg animate-fade-in"
+                    data-en="View Dishes"
+                    data-ar="عرض الأطباق"
+                  >
+                    View Dishes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="hero-slide"
+              style="
+                background-image: url('https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=1200');
+              "
+            >
+              <div class="hero-overlay"></div>
+              <div class="container">
+                <div class="hero-content">
+                  <h1
+                    class="hero-title animate-slide-up"
+                    data-en="Vegetarian Paradise"
+                    data-ar="جنة النباتيين"
+                  >
+                    Vegetarian Paradise
+                  </h1>
+                  <p
+                    class="hero-subtitle animate-slide-up-delay"
+                    data-en="Healthy and delicious plant-based Egyptian dishes"
+                    data-ar="أطباق مصرية نباتية صحية ولذيذة"
+                  >
+                    Healthy and delicious plant-based Egyptian dishes
+                  </p>
+                  <button
+                    class="btn btn-primary btn-lg animate-fade-in"
+                    data-en="Discover More"
+                    data-ar="اكتشف المزيد"
+                  >
+                    Discover More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title" data-en="Our Menu" data-ar="قائمتنا">
+              Our Menu
+            </h2>
+            <p
+              class="section-subtitle"
+              data-en="Discover authentic Egyptian flavors"
+              data-ar="اكتشف النكهات المصرية الأصيلة"
+            >
+              Discover authentic Egyptian flavors
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12 text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-primary dropdown-toggle menu-filter-btn"
+                type="button"
+                id="menuFilter"
+                data-bs-toggle="dropdown"
+              >
+                <span data-en="All Categories" data-ar="جميع الفئات"
+                  >All Categories</span
+                >
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="all"
+                    data-en="All Categories"
+                    data-ar="جميع الفئات"
+                    >All Categories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="seafood"
+                    data-en="Seafood"
+                    data-ar="مأكولات بحرية"
+                    >Seafood</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="meat"
+                    data-en="Meat"
+                    data-ar="لحوم"
+                    >Meat</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="chicken"
+                    data-en="Chicken"
+                    data-ar="دجاج"
+                    >Chicken</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-category="vegetarian"
+                    data-en="Vegetarian"
+                    data-ar="نباتي"
+                    >Vegetarian</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="menuItems">
+          <!-- Menu items will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2
+              class="section-title text-white"
+              data-en="What Our Customers Say"
+              data-ar="ماذا يقول عملاؤنا"
+            >
+              What Our Customers Say
+            </h2>
+            <p
+              class="section-subtitle text-white-50"
+              data-en="Real reviews from satisfied customers"
+              data-ar="تقييمات حقيقية من عملاء راضين"
+            >
+              Real reviews from satisfied customers
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="testimonialCarousel"
+          class="carousel cursoled slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="testimonial-card text-center">
+                    <div class="testimonial-avatar mb-3">
+                      <img
+                        src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150"
+                        alt="Customer"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="stars mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p
+                      class="testimonial-text"
+                      data-en='"Amazing authentic Egyptian food! The koshary was just like my grandmother used to make. Highly recommended!"'
+                      data-ar='"طعام مصري أصيل رائع! الكشري كان مثل الذي كانت تصنعه جدتي تماماً. أنصح به بشدة!"'
+                    >
+                      "Amazing authentic Egyptian food! The koshary was just
+                      like my grandmother used to make. Highly recommended!"
+                    </p>
+                    <h5
+                      class="customer-name"
+                      data-en="Ahmed Hassan"
+                      data-ar="أحمد حسن"
+                    >
+                      Ahmed Hassan
+                    </h5>
+                    <p
+                      class="customer-location"
+                      data-en="Cairo, Egypt"
+                      data-ar="القاهرة، مصر"
+                    >
+                      Cairo, Egypt
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="testimonial-card text-center">
+                    <div class="testimonial-avatar mb-3">
+                      <img
+                        src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150"
+                        alt="Customer"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="stars mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p
+                      class="testimonial-text"
+                      data-en='"The best Egyptian restaurant in the city! Fresh ingredients, perfect spices, and excellent service. Will definitely come back!"'
+                      data-ar='"أفضل مطعم مصري في المدينة! مكونات طازجة وتوابل مثالية وخدمة ممتازة. سأعود بالتأكيد!"'
+                    >
+                      "The best Egyptian restaurant in the city! Fresh
+                      ingredients, perfect spices, and excellent service. Will
+                      definitely come back!"
+                    </p>
+                    <h5
+                      class="customer-name"
+                      data-en="Fatma Ali"
+                      data-ar="فاطمة علي"
+                    >
+                      Fatma Ali
+                    </h5>
+                    <p
+                      class="customer-location"
+                      data-en="Alexandria, Egypt"
+                      data-ar="الإسكندرية، مصر"
+                    >
+                      Alexandria, Egypt
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="testimonial-card text-center">
+                    <div class="testimonial-avatar mb-3">
+                      <img
+                        src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150"
+                        alt="Customer"
+                        class="rounded-circle"
+                      />
+                    </div>
+                    <div class="stars mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p
+                      class="testimonial-text"
+                      data-en='"Incredible dining experience! The seafood was fresh and the flavors were outstanding. Perfect atmosphere for family dining."'
+                      data-ar='"تجربة طعام لا تصدق! المأكولات البحرية كانت طازجة والنكهات كانت رائعة. جو مثالي لتناول الطعام العائلي."'
+                    >
+                      "Incredible dining experience! The seafood was fresh and
+                      the flavors were outstanding. Perfect atmosphere for
+                      family dining."
+                    </p>
+                    <h5
+                      class="customer-name"
+                      data-en="Omar Mahmoud"
+                      data-ar="عمر محمود"
+                    >
+                      Omar Mahmoud
+                    </h5>
+                    <p
+                      class="customer-location"
+                      data-en="Giza, Egypt"
+                      data-ar="الجيزة، مصر"
+                    >
+                      Giza, Egypt
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-brand">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-utensils logo-icon me-2"></i>
+                <h4 class="brand-text" data-en="Kebdaky" data-ar="كبداكي">
+                  Kebdaky
+                </h4>
+              </div>
+              <p
+                class="footer-description"
+                data-en="Authentic Egyptian cuisine served with love and tradition. Experience the true taste of Egypt."
+                data-ar="المأكولات المصرية الأصيلة تُقدم بحب وتقليد. اختبر الطعم الحقيقي لمصر."
+              >
+                Authentic Egyptian cuisine served with love and tradition.
+                Experience the true taste of Egypt.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5
+              class="footer-title"
+              data-en="Contact Information"
+              data-ar="معلومات الاتصال"
+            >
+              Contact Information
+            </h5>
+            <div class="contact-item">
+              <i class="fas fa-phone me-2"></i>
+              <span>+20 123 456 789</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope me-2"></i>
+              <span>info@kebdaky.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp me-2"></i>
+              <span>+20 123 456 789</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5 class="footer-title" data-en="Follow Us" data-ar="تابعنا">
+              Follow Us
+            </h5>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p
+              class="copyright"
+              data-en="© 2025 Kebdaky Restaurant. All rights reserved."
+              data-ar="© 2025 مطعم كبداكي. جميع الحقوق محفوظة."
+            >
+              © 2025 Kebdaky Restaurant. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
